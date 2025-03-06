@@ -13,7 +13,8 @@ jobs:
         run: |
           echo $CR_PAT | docker login ghcr.io -u ${{ github.actor }} --password-stdin         
         env:
-          CR_PAT: ${{ secrets.CONTAINER_TOKEN }}
+          CR_PAT: ${{ secrets.GITHUB_TOKEN }}
+          #CR_PAT: ${{ secrets.CONTAINER_TOKEN }}
       - name: build container
         id: build-container
         run: |
