@@ -30,7 +30,7 @@ jobs:
       - name: Log in to the Container registry
         uses: docker/login-action@v3
         with:
-          registry: ghcr.io/terraform-test-modules/publish-container-org
+          registry: ghcr.io/terraform-test-modules/package-publish-repo
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
