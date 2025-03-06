@@ -38,7 +38,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/terraform-test-modules/publish-container-org
+          images: ghcr.io/terraform-test-modules/test-image
           tags: type=raw,value=1.0
           
       - name: Build and push Docker image
