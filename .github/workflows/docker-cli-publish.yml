@@ -17,12 +17,12 @@ jobs:
       - name: build container
         id: build-container
         run: |
-          docker build . -t ghcr.io/terraform-test-modules/package-publish-repo:1.0
+          docker build . -t ghcr.io/terraform-test-modules/publish-container-org:1.0
     #  - name: pull image
      #   run: |
      #     sleep 5m
     #      docker pull ghcr.io/uppercase-test-org/hello-world-docker-action-image:1.2
       - name: publish the container
         run: |
-          docker push ghcr.io/terraform-test-modules/package-publish-repo:1.0
+          docker push ghcr.io/terraform-test-modules/publish-container-org:1.0
            
